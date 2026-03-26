@@ -47,10 +47,12 @@ h1 {
 }
 
 h2 {
-  font-family: "Spline Sans Mono", monospace;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 200;
   color: #5da70d;
   font-size: 2.1rem;
-  line-height: 1;
+  line-height: .4;
 }
 
 .welcome-btnIngresar {
@@ -64,11 +66,12 @@ h2 {
 }
 
 .btnIngresar {
+  text-decoration: none;
   padding: 10px 20px;
-  font-family: "Spline Sans Mono", monospace;
-  font-size: 0.9rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
   border: 2px solid #5da70d;
-  background-color:#FFFFFF;
-  color: #5da70d;
+  background-color:#5da70d;
+  color: #FFFFFF;
   cursor: pointer;
 }
