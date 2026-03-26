@@ -1,0 +1,416 @@
+/* ---ESTILO PAGINA DE INFORMACION ---*/
+
+:root {
+  --color-primario: #5da70d;
+  --color-secundario: #f8eebe;
+  /* 🌑 Tonos oscuros */
+  --green-900: #3e700a; /* darkest */
+  --green-700: #4a860a;
+
+  /* 🎯 Color principal */
+  --green-500: #5da70d;
+
+  /* 🌿 Tonos claros */
+  --green-300: #7ccf2a;
+  --green-100: #9ee855;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+
+  /* ---IMAGEN DE PORTADA--- */
+}
+.portada {
+  width: 100%;
+  height: 365px;
+  overflow: hidden;
+  background-color: redS;
+}
+
+.portada__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 25%;
+}
+
+/* ---CONTADOR--- */
+
+.contador {
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+  margin-top: 10px;
+}
+
+.contador h2 {
+  width: 70%;
+  margin-top: 10px;
+  color: #5da70d;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  font-weight: 200;
+  text-align: center;
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+  gap: 2px;
+  justify-content: center;
+  align-items: center;
+}
+
+.contador__box {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #5da70d;
+  width: 90px;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+}
+
+.contador--separador {
+  width: 10px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.contador__box span {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.contador__box p {
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #5da70d;
+}
+
+.contador--separador p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+
+  font-size: 20px;
+  color: #5da70d;
+}
+
+/* ---FRASE PRINCIPAL ---*/
+.frase {
+  background-color: #5da70d;
+  width: 100%;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.frase--principal p {
+  width: 80%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  color: #f8eebe;
+  margin: 0px 20px 0px 20px;
+  padding: 20px 5px;
+  text-align: center;
+  border-top: 1px solid #f8eebe;
+  border-bottom: 1px solid #f8eebe;
+}
+
+/* GALERIA DE FOTOS */
+
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.3s ease;
+}
+
+.slide {
+  min-width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.slide img {
+  width: 100%;
+  height: 680px;
+  object-fit: cover;
+}
+
+/* CUANDO */
+.fecha {
+  width: 100%;
+  height: 340px;
+  background-color: #5da70d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.icono {
+  width: 60px;
+  height: 60px;
+  background-color: #f8eebe;
+
+  -webkit-mask: url("/img/calendario.gif") no-repeat center;
+  mask: url("/img/calendario.gif") no-repeat center;
+
+  -webkit-mask-size: contain;
+  mask-size: contain;
+}
+
+/* --- SECCION UBICACION */
+.ubicacion {
+  width: 100%;
+  height: 310px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffff;
+  color: #5da70d;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  text-transform: uppercase;
+  padding: 20px;
+  gap: 0px;
+}
+.ubicacion img {
+  background-color: black;
+}
+.ubicacion--btn {
+  padding: 8px 35px;
+  font-family: "Spline Sans Mono", monospace;
+  font-size: 0.9rem12;
+  border: 1px solid #5da70d;
+  color: #5da70d;
+  background-color: transparent;
+  cursor: pointer;
+  margin: 0px;
+  font-weight: 400;
+}
+
+.ubicacion h2 {
+  font-size: 22px;
+  font-weight: 400;
+  margin-top: 15px;
+  line-height: 28px;
+}
+
+.ubicacion h3 {
+  margin-top: 0;
+  font-size: 18px;
+  white-space: pre-line;
+  text-align: center;
+  line-height: 28px;
+  font-weight: 400;
+}
+
+/* --- FRASE SECUNDARIA */
+.frase--secundaria p {
+  width: 80%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  color: #f8eebe;
+  margin: 0px 20px 0px 20px;
+  padding: 25px 5px;
+  text-align: center;
+  border-top: 1px solid #f8eebe;
+  border-bottom: 1px solid #f8eebe;
+}
+
+.frase--secundaria span {
+  font-weight: 800;
+}
+
+/* --- DRESS CODE --- */
+
+.dresscode {
+  width: 100%;
+  height: 310px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffff;
+  color: #5da70d;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  text-transform: uppercase;
+
+  gap: 0px;
+}
+
+.dresscode--paleta {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.Paleta--color {
+  width: 40px;
+  height: 40px;
+}
+
+.Color--uno {
+  background-color: var(--green-900);
+}
+.Color--dos {
+  background-color: var(--green-700);
+}
+.Color--tres {
+  background-color: var(--green-500);
+}
+.Color--cuatro {
+  background-color: var(--green-300);
+}
+.Color--cinco {
+  background-color: var(--green-100);
+}
+
+/* --- BOTON FLOTANTE */
+
+.btn-musica {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 50%;
+  background: #5da70d;
+  color: white;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.btn-musica:hover {
+  transform: scale(1.1);
+  background: #4a860a;
+}
+
+/*  */
+
+.confirmacion {
+  background-color: #7ccf2a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.contenedor {
+  width: 320px;
+  margin: auto;
+  padding: 20px;
+  color: white;
+  background-color:#3e700a ;
+}
+
+select,
+input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
+  color:black;
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+label {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.btn {
+  background: #e5e5e5;
+  border: none;
+  padding: 10px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+/* RESPONSIVE */
+
+/* --- GALERIA DE FOTOS --- */
+
+/* 👇 DESKTOP: 3 imágenes */
+@media (min-width: 768px) {
+  .slide {
+    min-width: 33.333%;
+    height: 680px;
+  }
+
+  .slide img {
+    height: 680px;
+  }
+}
+
+/* DOTS */
+.dots {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.dots span {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin: 4px;
+  background: #000;
+  border-radius: 50%;
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+.dots .active {
+  opacity: 1;
+  transform: scale(1.2);
+}
