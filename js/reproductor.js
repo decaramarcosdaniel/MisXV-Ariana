@@ -26,13 +26,5 @@ btn.addEventListener("click", async () => {
 window.addEventListener("load", async () => {
   const estado = localStorage.getItem("musicaActiva");
 
-  if (estado === "true") {
-    try {
-      await audio.play();
-      btn.textContent = "⏸";
-      reproduciendo = true;
-    } catch (error) {
-      alert("No se pudo iniciar la música: " + error.message);
-    }
-  }
+
 });

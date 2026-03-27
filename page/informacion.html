@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Ariana - Mis XV</title>
+
+    <link rel="stylesheet" href="../css/info.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Poppins:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <main>
+      <!-- PORTADA -->
+      <section class="portada">
+        <img src="../img/1.webp" alt="Portada" class="portada__img" />
+      </section>
+
+      <!-- CONTADOR -->
+      <section class="contador">
+        <h2>¡La cuenta regresiva ha comenzado! Solo faltan!</h2>
+
+        <div class="box">
+          <div class="contador__box">
+            <span id="dias">00</span>
+            <p>DÍAS</p>
+          </div>
+          <div class="contador--separador">
+            <p>:</p>
+          </div>
+          <div class="contador__box">
+            <span id="horas">00</span>
+            <p>HORAS</p>
+          </div>
+          <div class="contador--separador">
+            <p>:</p>
+          </div>
+          <div class="contador__box">
+            <span id="minutos">00</span>
+            <p>MINUTOS</p>
+          </div>
+          <div class="contador--separador">
+            <p>:</p>
+          </div>
+          <div class="contador__box">
+            <span id="segundos">00</span>
+            <p>SEGUNDOS</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- FRASE -->
+      <section class="frase frase--principal">
+        <p>
+          Recuerda que la vida es un viaje, no un destino. Disfruta cada momento
+        </p>
+      </section>
+
+      <!-- GALERIA DE FOTOS  -->
+      <section class="carrousel">
+        <div class="carousel-track">
+          <div class="slide"><img src="../img/1.webp" /></div>
+          <div class="slide"><img src="../img/2.webp " /></div>
+          <div class="slide"><img src="../img/3.webp" /></div>
+          <div class="slide"><img src="../img/4.webp" /></div>
+          <div class="slide"><img src="../img/1.webp" /></div>
+          <div class="slide"><img src="../img/2.webp" /></div>
+        </div>
+      </section>
+
+      <!-- FECHA -->
+      <section class="fecha">
+        <img src="../img/calendario.gif" alt="calendario" class="icono" />
+        <h2>¿Cuándo?</h2>
+        <p>20 de Diciembre - 21:00 hs</p>
+      </section>
+
+      <!-- UBICACIÓN -->
+      <section class="ubicacion">
+        <img src="../img/calendario.gif" class="icono" alt="" />
+        <h2>¿Dónde?</h2>
+        <h3>Salon Polivalente Eva Peron</h3>
+        <button class="ubicacion--btn">COMO LLEGAR</button>
+      </section>
+
+      <!-- FRASE SECUNDARIA -->
+      <section class="frase frase--secundaria">
+        <p>PREPARATE PARA UNA NOCHE <span>¡INOLVIDABLE!</span></p>
+      </section>
+
+      <!-- DRESSCODE -->
+      <section class="dresscode">
+        <img src="../img/calendario.gif" alt="dresscode" class="icono" />
+        <h2>Dress Code</h2>
+        <p>ELEGANTE</p>
+        <div class="dresscode--paleta">
+          <div class="Paleta--color Color--uno"></div>
+          <div class="Paleta--color Color--dos"></div>
+          <div class="Paleta--color Color--tres"></div>
+          <div class="Paleta--color Color--cuatro"></div>
+          <div class="Paleta--color Color--cinco"></div>
+        </div>
+      </section>
+
+      <!-- REGALOS -->
+      <section class="regalos">
+        <h2>Regalos</h2>
+        <p>Alias / Info</p>
+      </section>
+
+      <!-- CONFIRMACION -->
+      <section class="confirmacion">
+        <img src="../img/calendario.gif" class="icono" alt="" />
+        <h2>CONFIRMÁ TU ASISTENCIA</h2>
+        <h4>ANTES DEL 20 DE SEPTIEMBRE 2026</h4>
+        <div class="contenedor">
+          <label>Número de personas a confirmar</label>
+          <select id="cantidad">
+            <option value="1">1 persona</option>
+            <option value="2">2 personas</option>
+            <option value="3">3 personas</option>
+            <option value="4">4 personas</option>
+          </select>
+
+          <div id="formularios"></div>
+
+          <button class="btn">Confirmar</button>
+        </div>
+      </section>
+      <!-- Audio -->
+
+      <audio id="musica" loop>
+        <source src="../audio/musica.mp3" />
+      </audio>
+
+      <!-- Botón flotante -->
+      <button id="btnMusica" class="btn-musica">▶</button>
+    </main>
+    <script src="../js/formulario.js" defer></script>
+    <script src="../js/contador.js" defer></script>
+
+    <script src="../js/reproductor.js" defer></script>
+  </body>
+</html>

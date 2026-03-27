@@ -85,9 +85,7 @@ updateCarousel()
 //FUNCION INGRESAR A OTRA PAGINA
 
 function irPagina() {
-  localStorage.setItem("musicaActiva", "true");
-  window.location.href = "informacion.html";
- 
+  localStorage.setItem("musicaActiva", "true"); 
 }
 
 //BOTON FLOTANTE

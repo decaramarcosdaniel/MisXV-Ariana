@@ -179,8 +179,8 @@ body {
   height: 60px;
   background-color: #f8eebe;
 
-  -webkit-mask: url("/img/calendario.gif") no-repeat center;
-  mask: url("/img/calendario.gif") no-repeat center;
+  -webkit-mask: url("../img/calendario.gif") no-repeat center;
+  mask: url("../img/calendario.gif") no-repeat center;
 
   -webkit-mask-size: contain;
   mask-size: contain;
@@ -393,24 +393,4 @@ label {
   }
 }
 
-/* DOTS */
-.dots {
-  text-align: center;
-  margin-top: 10px;
-}
 
-.dots span {
-  display: inline-block;
-  width: 8px;
-  height: 8px;
-  margin: 4px;
-  background: #000;
-  border-radius: 50%;
-  opacity: 0.3;
-  cursor: pointer;
-}
-
-.dots .active {
-  opacity: 1;
-  transform: scale(1.2);
-}
